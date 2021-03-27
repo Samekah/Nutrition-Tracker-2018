@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context="com.csed.csedsemester2.MainActivity">-->
+
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <!-- Contents of the screen -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Action Bar at the top of the screen -->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Fragments are loaded here -->
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <!-- Container for contents of drawer -->
+
+    <android.support.design.widget.NavigationView
+
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_view"
+        app:headerLayout="@layout/nav_header"/>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+

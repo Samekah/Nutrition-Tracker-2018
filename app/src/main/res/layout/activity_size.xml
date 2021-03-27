@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csed.csedsemester2.SizeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Select the size of your meal"/>
+
+        <TableLayout
+            android:id="@+id/sizeTable"
+            android:layout_width="230dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp">
+
+
+            <TableRow>
+                <Button
+                    android:id="@+id/snackButton"
+                    android:onClick="buttonSnackOnClick"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Snack"
+                    android:layout_width="100dp"
+                    android:background="@drawable/circularbutton"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#fff"
+                    />
+
+                <Button
+                    android:id="@+id/smallButton"
+                    android:onClick="buttonSmallOnClick"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Small"
+                    android:layout_width="100dp"
+                    android:background="@drawable/circularbutton"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+            </TableRow>
+
+
+            <TableRow>
+                <Button
+                    android:id="@+id/mediumButton"
+                    android:onClick="buttomMediumOnClick"
+                    android:layout_height="100dp"
+                    android:layout_width="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Medium"
+                    android:background="@drawable/circularbutton"
+                    android:layout_marginRight="30dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+
+                <Button
+                    android:id="@+id/largeButton"
+                    android:onClick="buttonLargeOnClick"
+                    android:layout_height="100dp"
+                    android:text="Large"
+                    android:background="@drawable/circularbutton"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    />
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/sizeTable"
+            android:onClick="buttonProceedOnClick"
+            android:background="@drawable/blue_border"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Submit Size"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

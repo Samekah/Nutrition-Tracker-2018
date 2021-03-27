@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/MealsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="View your 3 latest meals and their food category scores"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:id="@+id/textView3" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/MealsHeader">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1" >
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <Button
+                android:id="@+id/refButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select" />
+
+
+
+        </TableRow>
+        <TableRow
+            android:background="#000000"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text=" Date "
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/typetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Carbohydrates "
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:background="#000000"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/first_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Text"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/first_carb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Text"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:gravity="center" />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:background="#000000"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/second_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Text"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/second_carb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Text"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="#000000"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/third_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Text"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/third_carb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=" Text"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Enter your daily percentage target for each category below"/>
+
+
+    <RelativeLayout
+        android:id="@+id/GoalButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="55dp">
+
+        <RelativeLayout
+            android:id="@+id/GoalButtons"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/carbGoal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circularbutton"
+                android:clickable="true"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:text="Carbs"
+                android:textAlignment="center"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/proteinGoal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circularbutton"
+                android:clickable="true"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:text="Protein"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/dairyGoal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circularbutton"
+                android:clickable="true"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:text="Dairy"
+                android:textSize="25dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/GoalButtons2"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/GoalButtons"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/fruitGoal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circularbutton"
+                android:clickable="true"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:text="Fruit"
+                android:textSize="25dp"/>
+
+            <EditText
+                android:id="@+id/fatsGoal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circularbutton"
+                android:clickable="true"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="35dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:text="Fat"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/GoalButtonsContainer"
+            android:layout_marginTop="50dp"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textAllCaps="false"
+            android:background="@drawable/blue_border"/>
+
+        <TextView
+            android:id="@+id/GoalsErrorText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SaveButton"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textAlignment="center" />
+
+
+
+</RelativeLayout>

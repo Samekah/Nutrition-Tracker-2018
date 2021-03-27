@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/addNewMealLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:padding="20dp">
+
+
+        <Button
+            android:id="@+id/newMealButton"
+            android:onClick="buttonOnClick"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:text="Add new meal"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/blue_border"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/dailyPercentagesLayout"
+            android:layout_below="@+id/addNewMealLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/dailyPercentagesText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Daily Percentages"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/blue_border"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/percentagesPieChart"
+                android:layout_below="@+id/dailyPercentagesText"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dailyGoalsLayout"
+            android:layout_below="@id/dailyPercentagesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/dailyGoalsText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Daily Goals"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/blue_border"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/goalsPieChart"
+                android:layout_below="@+id/dailyGoalsText"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+
+        </RelativeLayout>
+
+
+            <!--<com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />-->
+
+</RelativeLayout>

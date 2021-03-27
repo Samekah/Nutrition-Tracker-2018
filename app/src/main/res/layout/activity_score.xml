@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Meal Summary"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_height="300dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <Button
+            android:id="@+id/reportButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pieChart"
+            android:layout_marginTop="30dp"
+            android:onClick="homeOnClick"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="@drawable/blue_border"/>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Meal scores" />
+
+        <TextView
+            android:id="@+id/textProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textFats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textFruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textDairy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:text="TextView" />-->
+
+    </RelativeLayout>
+</RelativeLayout>

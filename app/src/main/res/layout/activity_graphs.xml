@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+<TextView
+        android:id="@+id/graphName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/GraphSpace"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/graphName">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/graph"
+            android:text="Total Score" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/graph"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/graphName">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/GraphAxis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GraphSpace">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Time (hour of day)" />
+    </RelativeLayout>
+
+
+
+
+
+    <!--  <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:stretchColumns="1">
+
+         <TableRow>
+
+             <TextView
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="Date+Time" />
+             <TextView
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="Size" />
+             <TextView
+                 android:layout_column="3"
+                 android:padding="3dip"
+                 android:text="Protein" />
+             <TextView
+                 android:layout_column="4"
+                 android:padding="3dip"
+                 android:text="Sugar" />
+             <TextView
+                 android:layout_column="5"
+                 android:padding="3dip"
+                 android:text="Carbs" />
+             <TextView
+                 android:layout_column="6"
+                 android:padding="3dip"
+                 android:text="Dairy" />
+             <TextView
+                 android:layout_column="7"
+                 android:padding="3dip"
+                 android:text="F and V" />
+         </TableRow>
+
+         <TableRow>
+
+             <TextView
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="1/5/18 10am" />
+             <TextView
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="S" />
+             <TextView
+                 android:layout_column="3"
+                 android:padding="3dip"
+                 android:text="10" />
+             <TextView
+                 android:layout_column="4"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="5"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="6"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="7"
+                 android:padding="3dip"
+                 android:text="15" />
+         </TableRow>
+
+         <TableRow>
+
+             <TextView
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="1/5/18 1pm" />
+             <TextView
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="L" />
+             <TextView
+                 android:layout_column="3"
+                 android:padding="3dip"
+                 android:text="10" />
+             <TextView
+                 android:layout_column="4"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="5"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="6"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="7"
+                 android:padding="3dip"
+                 android:text="15" />
+         </TableRow>
+         <TableRow>
+
+             <TextView
+                 android:layout_column="1"
+                 android:padding="3dip"
+                 android:text="1/5/18 7pm" />
+             <TextView
+                 android:layout_column="2"
+                 android:padding="3dip"
+                 android:text="M" />
+             <TextView
+                 android:layout_column="3"
+                 android:padding="3dip"
+                 android:text="1" />
+             <TextView
+                 android:layout_column="4"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="5"
+                 android:padding="3dip"
+                 android:text="25" />
+             <TextView
+                 android:layout_column="6"
+                 android:padding="3dip"
+                 android:text="15" />
+             <TextView
+                 android:layout_column="7"
+                 android:padding="3dip"
+                 android:text="15" />
+         </TableRow>
+
+
+
+
+     </TableLayout>
+
+ </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/GraphButtons"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/GraphSpace"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/carbGraph"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Carbs"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:onClick="createCarbsGraph"/>
+        <Button
+            android:id="@+id/proteinGraph"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Protein"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:onClick="createProteinGraph"/>
+
+        <Button
+            android:id="@+id/dairyGraph"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Dairy"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/GraphButtons2"
+        android:layout_width="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_below="@+id/GraphButtons"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/fruitGraph"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Fruit"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/fatsGraph"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            android:text="Fats"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/GraphButtons2"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/EnterDate"
+            android:layout_marginRight="20dp"
+            android:text="Enter Date:"
+            android:textSize="17dp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/EnterDate"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:clickable="true"
+            android:inputType="date"/>
+
+        <Button
+            android:id="@+id/EnterDateButton"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:background="@drawable/blue_square_button"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

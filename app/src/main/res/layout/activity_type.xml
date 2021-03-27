@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context="com.csed.csedsemester2.TypeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/typeFormat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Enter the food group percentages for your meal"/>
+
+        <TableLayout
+            android:id="@+id/typeTable"
+            android:layout_marginTop="110dp"
+            android:layout_width="240dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="345dp">
+
+            <TextView
+                android:id="@+id/carbsText"
+                android:text="Carbohydrates:"
+                android:layout_marginTop="5dp"
+                android:textSize="25dp" />
+
+            <SeekBar
+                android:id="@+id/carbsBar" />
+
+            <TextView
+                android:id="@+id/dairyText"
+                android:layout_marginTop="5dp"
+                android:text="Dairy:"
+                android:textSize="25dp" />
+
+            <SeekBar
+                android:id="@+id/dairyBar" />
+
+            <TextView
+                android:id="@+id/fruitText"
+                android:text="Fruit or Veg:"
+                android:layout_marginTop="5dp"
+                android:textSize="25dp" />
+
+            <SeekBar
+                android:id="@+id/fruitBar" />
+
+            <TextView
+                android:id="@+id/fatsText"
+                android:text="Fats or Sugars:"
+                android:layout_marginTop="5dp"
+                android:textSize="25dp" />
+
+            <SeekBar
+                android:id="@+id/fatsBar" />
+
+            <TextView
+                android:id="@+id/proteinText"
+                android:layout_marginTop="5dp"
+                android:text="Protein:"
+                android:textSize="25dp" />
+
+            <SeekBar
+                android:id="@+id/proteinBar" />
+
+            <TextView
+                android:id="@+id/totalText"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Total: "
+                android:textSize="25dp" />
+
+
+
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/TotalErrorText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeTable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/Proceed"
+            android:layout_height="60dp"
+            android:width="300dp"
+            android:layout_below="@+id/TotalErrorText"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:onClick="buttonProceedOnClick"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:background="@drawable/blue_border"
+            android:textAllCaps="false"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
